@@ -4,7 +4,7 @@
 }
 
 /*Validation*/
-.field-validation-error{
+.field-validation-error, .required{
     color: red;
 }
 
@@ -195,5 +195,38 @@ footer div{
 
 .form-group a{
     color:black;
+}
+
+.login-panels{
+    border-left: 1px dashed gray;
+    height: 280px;
+}
+
+/* ordered list */
+
+ol.round {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ol.round li {
+    margin: 25px 0;
+    padding-left: 45px;
+}
+
+ol.round li.zero {
+    background: url("../Images/orderedList0.png") no-repeat;
+}
+
+ol.round li.one {
+    background: url("../Images/orderedList1.png") no-repeat;
+}
+
+ol.round li.two {
+    background: url("../Images/orderedList2.png") no-repeat;
+}
+
+ol.round li.three {
+    background: url("../Images/orderedList3.png") no-repeat;
 }
 

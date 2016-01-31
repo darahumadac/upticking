@@ -6,13 +6,17 @@
 
 <div id="loginDiv" class="body-container col-lg-12">
     <div class="content-header container">
-        <h3>Login / Register your Account</h3>
+        <h3 class="col-lg-4">Login / Register your Account</h3>
+        <h3 class="col-lg-5">
+            Don't like to register?<br/>
+            Login with one of these accounts
+        </h3>
+        <h3 class="col-lg-3">Why Register?</h3>
     </div>
     <div id="loginForm" class="container content-container">
-        <form role="form" class="col-lg-6">
+        <form role="form" class="col-lg-4">
             @Html.AntiForgeryToken()
-            @Html.ValidationSummary()
-
+            @Html.ValidationSummary(true)
             <div class="form-group">
                 @Html.EditorFor(m => m.IsMember)
                 <small>@Html.LabelFor(m => m.IsMember, "I am already a member of Upticking")</small>
@@ -21,17 +25,21 @@
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Email, "Please enter your e-mail address")
+                <span class="required">*</span>
+                <div><small>@Html.ValidationMessageFor(m => m.Email)</small></div>
                 <div class="login-input">
                     @Html.EditorFor(m => m.Email, new { @class = "col-lg-6" })
-                    <small>@Html.ValidationMessageFor(m => m.Email)</small>
+                    @*<small>@Html.ValidationMessageFor(m => m.Email)</small>*@
                 </div>
             </div>
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Password, "Please enter your password")
+                <span class="required">*</span>
+                <div><small>@Html.ValidationMessageFor(m => m.Password)</small></div>
                 <div class="login-input">
                     @Html.EditorFor(m => m.Password)
-                    <small>@Html.ValidationMessageFor(m => m.Password)</small>
+                    @*<small>@Html.ValidationMessageFor(m => m.Password)</small>*@
                 </div>
             </div>
             <div class="form-group account-options">
@@ -42,8 +50,24 @@
             <div class="form-group">
                 <input id="loginBtn" type="submit" class="btn btn-default col-lg-4" value="Log in" />
             </div>
-            
         </form>
+        <div id="socialmedia-login" class="col-lg-5 login-panels">
+            <button class="btn btn-default col-lg-3">Facebook</button>
+            <button class="btn btn-default col-lg-3">Google</button>
+        </div>
+        <div id="why-register" class="col-lg-3 login-panels">
+           <ol class="round">
+               <li class="one">
+                   Upload your properties for listing
+               </li>
+               <li class="two">
+                   Set email search alerts based on your search
+               </li>
+               <li class="three">
+                   Get newsletters and notifications
+               </li>
+           </ol>
+        </div>
     </div>
 
 </div>
