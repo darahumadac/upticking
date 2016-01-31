@@ -1,0 +1,136 @@
+﻿@font-face{
+    font-family: quicksand-regular;
+    src: url('fonts/Quicksand-Regular.otf');
+}
+
+/* Universal Styles */
+
+body {
+    font-family: quicksand-regular;
+}
+
+.content-wrapper{
+    margin-top: 55px;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-image: none;
+  background-color: #FFA100;
+  border-color: #FFA100;
+}
+
+.navbar-default a, .navbar-default .navbar-nav > li > a, a{
+      color: white;
+}
+
+.nav-tabs{
+    border:none;
+    margin-left: 40px;
+
+}
+
+.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
+.nav-tabs > li.active.selected a, #searchBtn-searchBox{
+    background-color: #98F23D;
+    border-color: #98F23D;
+    font-weight:bold;
+    color: white;
+}
+
+.nav-tabs > li.active > a:hover{
+    cursor: pointer;
+}
+
+h3 {
+    color: #c8c8c8;
+    font-weight: bold;
+}
+
+.site-title a, .site-title a:hover, .site-title a:active, a:hover {
+    background: none;
+    text-decoration: none;
+}
+
+/* Index */
+#searchWidget{
+    /*background: url('../Images/searchhouse.jpg') no-repeat;*/
+    /*background: url('../Images/25H.jpg') no-repeat;*/
+    background: url('../Images/city.jpg') no-repeat;
+    /*background: url('../Images/road.jpeg') no-repeat;*/
+    background-size: cover;
+    height: 600px;
+}
+
+#searchDiv{
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+#searchBox{
+    height: 100px;
+    border: 1px solid #DEFDBE;
+    background-color: #DEFDBE;
+    border-radius: 4px;
+}
+
+.message h3{
+    margin-bottom: 100px;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+#searchBoxForm{
+    margin-top: 30px;
+}
+
+#searchBoxForm > div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height:34px;
+}
+
+#searchBtn-searchBox:hover{
+    background-color: #FF8E13;
+    border-color:#FF8E13;
+}
+
+#featuredContent{
+    height: 500px;
+}
+
+/*Footer*/
+
+footer div{
+    background-color: #FF921B;
+    height: 50px;
+}
+
+ footer span{
+   margin: 10px;
+ }
+
+#links{
+    margin-top: 10px;
+}
