@@ -58,8 +58,12 @@ namespace Upticking.Models
     public class LoginModel
     {
         [Required]
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        public bool IsMember { get; set; }
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email Address")]
+        public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

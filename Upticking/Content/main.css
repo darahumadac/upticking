@@ -3,6 +3,11 @@
     src: url('fonts/Quicksand-Regular.otf');
 }
 
+/*Validation*/
+.field-validation-error{
+    color: red;
+}
+
 /* Universal Styles */
 
 body {
@@ -46,7 +51,7 @@ body {
 }
 
 .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
-.nav-tabs > li.active.selected a, #searchBtn-searchBox{
+.nav-tabs > li.active.selected a, #searchBtn-searchBox, #loginBtn{
     background-color: #98F23D;
     border-color: #98F23D;
     font-weight:bold;
@@ -62,9 +67,25 @@ h3 {
     font-weight: bold;
 }
 
+
+
 .site-title a, .site-title a:hover, .site-title a:active, a:hover {
     background: none;
     text-decoration: none;
+}
+
+.body-container{
+    height: 600px;
+}
+
+.content-container{
+    border: 1px solid #DEFDBE;
+    background-color: #DEFDBE;
+    border-radius: 4px;
+}
+
+.content-header{
+    margin-top: 20px;
 }
 
 /* Index */
@@ -74,7 +95,7 @@ h3 {
     background: url('../Images/city.jpg') no-repeat;
     /*background: url('../Images/road.jpeg') no-repeat;*/
     background-size: cover;
-    height: 600px;
+    /*height: 600px;*/
 }
 
 #searchDiv{
@@ -82,11 +103,12 @@ h3 {
     margin-right: 20px;
 }
 
+
 #searchBox{
     height: 100px;
-    border: 1px solid #DEFDBE;
+    /*border: 1px solid #DEFDBE;
     background-color: #DEFDBE;
-    border-radius: 4px;
+    border-radius: 4px;*/
 }
 
 .message h3{
@@ -134,3 +156,44 @@ footer div{
 #links{
     margin-top: 10px;
 }
+
+/*Login*/
+
+#loginDiv{
+    /*background-color: #CBACBF;*/
+}
+#loginDiv h3{
+    color: black;
+}
+#loginForm{
+    margin-top: 20px;
+    padding-top: 30px;
+    height: 400px;
+    
+}
+
+#loginForm .form-group label, .login-input input{
+    font-size: 18px;
+}
+
+.account-options, #loginForm .form-group small label{
+    font-size: 12px;
+}
+
+.account-options a{
+    margin-right:50px;
+    text-decoration: underline;
+}
+.account-options a:hover{
+    text-decoration: none;
+}
+
+.login-input input, #loginBtn{
+    margin-right: 5px;
+    width: 300px;
+}
+
+.form-group a{
+    color:black;
+}
+
